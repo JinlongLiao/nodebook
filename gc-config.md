@@ -8,8 +8,8 @@
 -Xmn|新生代大小(jdk 1.4或以上版本)|增大新生代后，将会减小老年代大小。此值对系统性能影响较大。Sun官方推荐配置为整个堆的3/8
 -Xss|每个线程的堆栈大小|JDK5.0以后每个线程堆栈大小为1M，以前每个线程堆栈大小为256K，可以带 K, M 或 G单位
 -XX:ThreadStackSize|同上|0代表使用默认值，不能带单位
-~~-XX:PermSize|设置永久代初始值|物理内存的1/64~~
-~~-XX:MaxPermSize|设置永久代最大值|物理内存的1/4~~
+~~-XX:PermSize~~|~~设置永久代初始值~~|~~物理内存的1/64~~
+~~-XX:MaxPermSize4~~|~~设置永久代最大值~~|~~物理内存的1/4~~
 -XX:NewRatio|新生代(包括Eden和两个Survivor区)与老年代的比值(除去永久代)|-XX:NewRatio=4表示新生代与老年代所占比值为1:4，新生代占整个堆栈的1/5，Xms=Xmx并且设置了Xmn的情况下，该参数不需要进行设置。
 -XX:SurvivorRatio|Eden区与Survivor区的大小比值|设置为8，则两个Survivor区与一个Eden区的比值为2:8,一个Survivor区占整个新生代的1/10
 -XX:LargePageSizeInBytes|内存页的大小不可设置过大， 会影响Perm的大小|=128m
